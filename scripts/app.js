@@ -9,10 +9,10 @@
 const perfumes = [
     {
         id: 1,
-        name: "Hawas Ice",
+        name: "Hawas",
         brand: "Rasasi",
-        year: 2023,
-        gender: "Unisex",
+        year: 2015,
+        gender: "Masculino",
         concentration: "EDP",
         family: "Aromático Acuático",
         description: "Una fragancia fresca y dinámica que combina la frescura de la manzana con toques especiados de anís. Perfecta para el verano y días calurosos.",
@@ -29,7 +29,7 @@ const perfumes = [
         ],
         longevity: "8-10 horas",
         sillage: "Moderado",
-        image: "https://images.unsplash.com/photo-1594035910387-fea47794261f?w=400",
+        image: "assets/perfumes/hawas.jpg",
         prices: { "5ml": 35, "10ml": 55, "full": 180 }
     },
     {
@@ -54,12 +54,12 @@ const perfumes = [
         ],
         longevity: "8-10 horas",
         sillage: "Fuerte",
-        image: "https://images.unsplash.com/photo-1592914610354-fd354ea45e48?w=400",
+        image: "assets/perfumes/9am-dive.jpg",
         prices: { "5ml": 30, "10ml": 50, "full": 150 }
     },
     {
         id: 3,
-        name: "Aqua Dubai",
+        name: "Amber Oud Aqua Dubai",
         brand: "Al Haramain",
         year: 2024,
         gender: "Unisex",
@@ -79,7 +79,7 @@ const perfumes = [
         ],
         longevity: "7-9 horas",
         sillage: "Moderado",
-        image: "https://images.unsplash.com/photo-1587017539504-67cfbddac569?w=400",
+        image: "assets/perfumes/amber-oud-aqua-dubai.png",
         prices: { "5ml": 35, "10ml": 60, "full": 190 }
     },
     {
@@ -104,7 +104,7 @@ const perfumes = [
         ],
         longevity: "6-8 horas",
         sillage: "Moderado",
-        image: "https://images.unsplash.com/photo-1595425964071-2c1ecb10b52d?w=400",
+        image: "assets/perfumes/le-beau.jpg",
         prices: { "5ml": 45, "10ml": 75, "full": 280 }
     },
     {
@@ -129,7 +129,7 @@ const perfumes = [
         ],
         longevity: "6-8 horas",
         sillage: "Moderado",
-        image: "https://images.unsplash.com/photo-1523293182086-7651a899d37f?w=400",
+        image: "assets/perfumes/le-beau-paradise-garden.jpg",
         prices: { "5ml": 50, "10ml": 85, "full": 320 }
     },
     {
@@ -154,7 +154,7 @@ const perfumes = [
         ],
         longevity: "8-10 horas",
         sillage: "Fuerte",
-        image: "https://images.unsplash.com/photo-1547887538-e3a2f32cb1cc?w=400",
+        image: "assets/perfumes/sceptre-malachite.png",
         prices: { "5ml": 30, "10ml": 50, "full": 140 }
     },
     {
@@ -179,7 +179,7 @@ const perfumes = [
         ],
         longevity: "8-10 horas",
         sillage: "Fuerte",
-        image: "https://images.unsplash.com/photo-1541643600914-78b084683601?w=400",
+        image: "assets/perfumes/eros-flame.jpg",
         prices: { "5ml": 50, "10ml": 85, "full": 350 }
     },
     {
@@ -204,7 +204,7 @@ const perfumes = [
         ],
         longevity: "10-12 horas",
         sillage: "Fuerte",
-        image: "https://images.unsplash.com/photo-1557170334-a9632e77c6e4?w=400",
+        image: "assets/perfumes/club-de-nuit-urban-man-elixir.jpg",
         prices: { "5ml": 35, "10ml": 55, "full": 160 }
     },
     {
@@ -229,7 +229,7 @@ const perfumes = [
         ],
         longevity: "10-12 horas",
         sillage: "Muy Fuerte",
-        image: "https://images.unsplash.com/photo-1590736969955-71cc94801759?w=400",
+        image: "assets/perfumes/stronger-with-you.png",
         prices: { "5ml": 55, "10ml": 95, "full": 400 }
     },
     {
@@ -254,7 +254,7 @@ const perfumes = [
         ],
         longevity: "12+ horas",
         sillage: "Muy Fuerte",
-        image: "https://images.unsplash.com/photo-1585386959984-a4155224a1ad?w=400",
+        image: "assets/perfumes/khamrah.jpg",
         prices: { "5ml": 25, "10ml": 40, "full": 120 }
     },
     {
@@ -279,7 +279,7 @@ const perfumes = [
         ],
         longevity: "12+ horas",
         sillage: "Muy Fuerte",
-        image: "https://images.unsplash.com/photo-1619994403073-2cec844b8e63?w=400",
+        image: "assets/perfumes/khamrah-qahwa.jpg",
         prices: { "5ml": 25, "10ml": 40, "full": 120 }
     },
     {
@@ -304,33 +304,33 @@ const perfumes = [
         ],
         longevity: "8-10 horas",
         sillage: "Fuerte",
-        image: "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=400",
+        image: "assets/perfumes/odyssey-mandarin-sky.png",
         prices: { "5ml": 30, "10ml": 50, "full": 140 }
     },
     {
         id: 13,
-        name: "Sublime",
-        brand: "Jean Patou",
-        year: 1992,
-        gender: "Femenino",
+        name: "Badee Al Oud Sublime",
+        brand: "Lattafa",
+        year: 2021,
+        gender: "Unisex",
         concentration: "EDP",
-        family: "Chypre Floral",
-        description: "Sublimidad atemporal. Un clásico que combina bergamota y notas verdes con un corazón floral opulento y un fondo de ámbar y vainilla.",
+        family: "Oriental Especiado",
+        description: "Opulencia árabe en cada nota. Una fragancia rica y sofisticada con especias, oud y vainilla que evoca el lujo del medio oriente.",
         notes: {
-            top: ["Bergamota", "Notas Verdes", "Cilantro", "Mandarina"],
-            heart: ["Jazmín", "Ylang-Ylang", "Lirio", "Lirio de los Valles", "Rosa", "Clavel", "Raíz de Iris"],
-            base: ["Ámbar", "Musgo de Roble", "Sándalo", "Styrax", "Haba Tonka", "Vainilla", "Vetiver", "Cedro", "Almizcle"]
+            top: ["Canela", "Nuez Moscada", "Azafrán"],
+            heart: ["Rosa", "Oud", "Jazmín"],
+            base: ["Vainilla", "Ámbar", "Sándalo", "Almizcle"]
         },
         accords: [
-            { name: "floral", value: 90, color: "#e056a0" },
+            { name: "oriental", value: 90, color: "#9b59b6" },
+            { name: "especiado", value: 80, color: "#eb4d4b" },
             { name: "amaderado", value: 70, color: "#8b6914" },
-            { name: "especiado", value: 55, color: "#eb4d4b" },
-            { name: "ámbar", value: 50, color: "#f0932b" }
+            { name: "dulce", value: 60, color: "#ff7979" }
         ],
-        longevity: "8-10 horas",
-        sillage: "Moderado",
-        image: "https://images.unsplash.com/photo-1588405748880-12d1d2a59f75?w=400",
-        prices: { "5ml": 55, "10ml": 95, "full": 450 }
+        longevity: "12+ horas",
+        sillage: "Muy Fuerte",
+        image: "assets/perfumes/badee-al-oud-sublime.png",
+        prices: { "5ml": 25, "10ml": 40, "full": 110 }
     }
 ];
 
@@ -598,16 +598,25 @@ function setupEventListeners() {
 // ----------------------------------------
 function setupScrollEffects() {
     const header = document.querySelector('.header');
+    const heroBg = document.querySelector('.hero-bg img');
 
     window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
+        const scrollY = window.scrollY;
+
+        // Header effect
+        if (scrollY > 50) {
             header?.classList.add('scrolled');
         } else {
             header?.classList.remove('scrolled');
         }
+
+        // Parallax effect for hero background
+        if (heroBg && scrollY < window.innerHeight) {
+            heroBg.style.transform = `translateY(${scrollY * 0.4}px) scale(1.1)`;
+        }
     });
 
-    // Intersection Observer for animations
+    // Intersection Observer for fade-in animations
     const observerOptions = {
         threshold: 0.1,
         rootMargin: '0px 0px -50px 0px'
@@ -627,6 +636,20 @@ function setupScrollEffects() {
         el.style.transform = 'translateY(20px)';
         el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
         observer.observe(el);
+    });
+
+    // Reveal on scroll for sections
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('revealed');
+            }
+        });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('.glass-card, .trust-badge, .payment-method').forEach(el => {
+        el.classList.add('reveal-on-scroll');
+        revealObserver.observe(el);
     });
 }
 
@@ -661,3 +684,23 @@ window.closeProductModal = closeProductModal;
 window.selectPresentation = selectPresentation;
 window.orderViaWhatsApp = orderViaWhatsApp;
 window.contactViaWhatsApp = contactViaWhatsApp;
+
+// ----------------------------------------
+// FAQ Accordion
+// ----------------------------------------
+function toggleFaq(button) {
+    const faqItem = button.parentElement;
+    const isActive = faqItem.classList.contains('active');
+
+    // Close all FAQ items first
+    document.querySelectorAll('.faq-item').forEach(item => {
+        item.classList.remove('active');
+    });
+
+    // Toggle the clicked one
+    if (!isActive) {
+        faqItem.classList.add('active');
+    }
+}
+
+window.toggleFaq = toggleFaq;
