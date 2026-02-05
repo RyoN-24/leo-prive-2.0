@@ -30,7 +30,8 @@ const perfumes = [
         longevity: "8-10 horas",
         sillage: "Moderado",
         image: "assets/perfumes/hawas.jpg",
-        prices: { "5ml": 35, "10ml": 55, "full": 180 }
+        badge: "A PEDIDO",
+        prices: { "5ml": 20, "10ml": 35, "full": 190 }
     },
     {
         id: 2,
@@ -55,7 +56,8 @@ const perfumes = [
         longevity: "8-10 horas",
         sillage: "Fuerte",
         image: "assets/perfumes/9am-dive.jpg",
-        prices: { "5ml": 30, "10ml": 50, "full": 150 }
+        badge: "A PEDIDO",
+        prices: { "5ml": 20, "10ml": 35, "full": 170 }
     },
     {
         id: 3,
@@ -80,7 +82,8 @@ const perfumes = [
         longevity: "7-9 horas",
         sillage: "Moderado",
         image: "assets/perfumes/amber-oud-aqua-dubai.png",
-        prices: { "5ml": 35, "10ml": 60, "full": 190 }
+        badge: "A PEDIDO",
+        prices: { "5ml": 25, "10ml": 45, "full": 270 }
     },
     {
         id: 4,
@@ -105,7 +108,8 @@ const perfumes = [
         longevity: "6-8 horas",
         sillage: "Moderado",
         image: "assets/perfumes/le-beau.jpg",
-        prices: { "5ml": 45, "10ml": 75, "full": 280 }
+        badge: "A PEDIDO",
+        prices: { "5ml": 35, "10ml": 65, "full": 430 }
     },
     {
         id: 5,
@@ -130,7 +134,8 @@ const perfumes = [
         longevity: "6-8 horas",
         sillage: "Moderado",
         image: "assets/perfumes/le-beau-paradise-garden.jpg",
-        prices: { "5ml": 50, "10ml": 85, "full": 320 }
+        badge: "A PEDIDO",
+        prices: { "5ml": 35, "10ml": 65, "full": 480 }
     },
     {
         id: 6,
@@ -155,7 +160,8 @@ const perfumes = [
         longevity: "8-10 horas",
         sillage: "Fuerte",
         image: "assets/perfumes/sceptre-malachite.png",
-        prices: { "5ml": 30, "10ml": 50, "full": 140 }
+        badge: "A PEDIDO",
+        prices: { "5ml": 20, "10ml": 35, "full": 170 }
     },
     {
         id: 7,
@@ -180,7 +186,8 @@ const perfumes = [
         longevity: "8-10 horas",
         sillage: "Fuerte",
         image: "assets/perfumes/eros-flame.jpg",
-        prices: { "5ml": 50, "10ml": 85, "full": 350 }
+        badge: "A PEDIDO",
+        prices: { "5ml": 35, "10ml": 65, "full": 349 }
     },
     {
         id: 8,
@@ -205,7 +212,8 @@ const perfumes = [
         longevity: "10-12 horas",
         sillage: "Fuerte",
         image: "assets/perfumes/club-de-nuit-urban-man-elixir.jpg",
-        prices: { "5ml": 35, "10ml": 55, "full": 160 }
+        badge: "A PEDIDO",
+        prices: { "5ml": 20, "10ml": 35, "full": 190 }
     },
     {
         id: 9,
@@ -230,7 +238,8 @@ const perfumes = [
         longevity: "10-12 horas",
         sillage: "Muy Fuerte",
         image: "assets/perfumes/stronger-with-you.png",
-        prices: { "5ml": 55, "10ml": 95, "full": 400 }
+        badge: "A PEDIDO",
+        prices: { "5ml": 35, "10ml": 65, "full": 430 }
     },
     {
         id: 10,
@@ -255,7 +264,8 @@ const perfumes = [
         longevity: "12+ horas",
         sillage: "Muy Fuerte",
         image: "assets/perfumes/khamrah.jpg",
-        prices: { "5ml": 25, "10ml": 40, "full": 120 }
+        badge: "A PEDIDO",
+        prices: { "5ml": 20, "10ml": 35, "full": 170 }
     },
     {
         id: 11,
@@ -280,7 +290,8 @@ const perfumes = [
         longevity: "12+ horas",
         sillage: "Muy Fuerte",
         image: "assets/perfumes/khamrah-qahwa.jpg",
-        prices: { "5ml": 25, "10ml": 40, "full": 120 }
+        badge: "A PEDIDO",
+        prices: { "5ml": 20, "10ml": 35, "full": 170 }
     },
     {
         id: 12,
@@ -305,7 +316,8 @@ const perfumes = [
         longevity: "8-10 horas",
         sillage: "Fuerte",
         image: "assets/perfumes/odyssey-mandarin-sky.png",
-        prices: { "5ml": 30, "10ml": 50, "full": 140 }
+        badge: "A PEDIDO",
+        prices: { "5ml": 20, "10ml": 35, "full": 170 }
     },
     {
         id: 13,
@@ -330,7 +342,8 @@ const perfumes = [
         longevity: "12+ horas",
         sillage: "Muy Fuerte",
         image: "assets/perfumes/badee-al-oud-sublime.png",
-        prices: { "5ml": 25, "10ml": 40, "full": 110 }
+        badge: "A PEDIDO",
+        prices: { "5ml": 20, "10ml": 35, "full": 160 }
     }
 ];
 
@@ -382,7 +395,7 @@ function renderProducts() {
              data-product-id="${perfume.id}">
             <div class="product-image">
                 <img src="${perfume.image}" alt="${perfume.name}" loading="lazy">
-                ${perfume.year >= 2024 ? '<span class="badge">Nuevo</span>' : ''}
+                ${perfume.badge ? `<span class="badge">${perfume.badge}</span>` : ''}
             </div>
             <div class="product-info">
                 <div class="product-brand">${perfume.brand}</div>
