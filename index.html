@@ -206,25 +206,25 @@
                     style="margin-bottom: var(--space-xl); color: var(--color-text-secondary); font-family: var(--font-family-display); font-style: italic; letter-spacing: 0.1em;">
                     Aceptamos</h4>
                 <div class="payment-methods-list">
-                    <div class="payment-method">
+                    <div class="payment-method" onclick="showQRModal('yape')" style="cursor: pointer;">
                         <img src="assets/yape-icon.png" alt="Yape" class="payment-method-img">
                         <div class="payment-method-info">
                             <span class="payment-method-name">Yape</span>
-                            <span class="payment-method-desc">Transferencia instantánea</span>
+                            <span class="payment-method-desc">Click para ver QR</span>
                         </div>
                     </div>
-                    <div class="payment-method">
+                    <div class="payment-method" onclick="showQRModal('plin')" style="cursor: pointer;">
                         <img src="assets/plin-icon.png" alt="Plin" class="payment-method-img">
                         <div class="payment-method-info">
                             <span class="payment-method-name">Plin</span>
-                            <span class="payment-method-desc">Transferencia instantánea</span>
+                            <span class="payment-method-desc">Click para ver QR</span>
                         </div>
                     </div>
                     <div class="payment-method">
                         <img src="assets/bcp-icon.png" alt="BCP" class="payment-method-img">
                         <div class="payment-method-info">
-                            <span class="payment-method-name">Banco de Crédito</span>
-                            <span class="payment-method-desc">Cuenta de Ahorros</span>
+                            <span class="payment-method-name">BCP Soles</span>
+                            <span class="payment-method-desc">50596309363072</span>
                         </div>
                     </div>
                     <div class="payment-method">
@@ -536,6 +536,25 @@
                     </svg>
                     Pedir por WhatsApp
                 </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================
+         QR Modal for Yape/Plin
+         ======================================== -->
+    <div class="modal-overlay" id="qrModal" onclick="closeQRModal(event)">
+        <div class="modal-content qr-modal-content" onclick="event.stopPropagation()">
+            <div class="modal-header">
+                <h3 id="qrModalTitle">Escanea el QR</h3>
+                <button class="modal-close" onclick="closeQRModal()">✕</button>
+            </div>
+            <div class="modal-body" style="text-align: center; padding: var(--space-xl);">
+                <img id="qrModalImage" src="" alt="Código QR"
+                    style="max-width: 100%; max-height: 70vh; border-radius: var(--radius-lg);">
+                <p style="margin-top: var(--space-lg); color: var(--color-text-secondary);">
+                    Escanea este código con tu app para realizar el pago
+                </p>
             </div>
         </div>
     </div>

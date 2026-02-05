@@ -717,3 +717,33 @@ function toggleFaq(button) {
 }
 
 window.toggleFaq = toggleFaq;
+
+// ----------------------------------------
+// QR Modal Functions for Yape/Plin
+// ----------------------------------------
+function showQRModal(type) {
+    const modal = document.getElementById('qrModal');
+    const title = document.getElementById('qrModalTitle');
+    const image = document.getElementById('qrModalImage');
+
+    if (type === 'yape') {
+        title.textContent = 'Paga con Yape';
+        image.src = 'assets/qr-yape.jpg';
+    } else if (type === 'plin') {
+        title.textContent = 'Paga con Plin';
+        image.src = 'assets/qr-plin.jpg';
+    }
+
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeQRModal(event) {
+    if (event && event.target !== event.currentTarget) return;
+    const modal = document.getElementById('qrModal');
+    modal.classList.remove('active');
+    document.body.style.overflow = '';
+}
+
+window.showQRModal = showQRModal;
+window.closeQRModal = closeQRModal;
