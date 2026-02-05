@@ -9,7 +9,7 @@
 const perfumes = [
     {
         id: 1,
-        name: "Hawas",
+        name: "Hawas Ice",
         brand: "Rasasi",
         year: 2015,
         gender: "Masculino",
