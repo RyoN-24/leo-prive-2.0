@@ -1841,8 +1841,8 @@ h2 {
 }
 
 .floating-btn {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -1860,27 +1860,51 @@ h2 {
 /* TikTok Button */
 .floating-tiktok {
     background: #000000;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    animation: pulseTiktok 2s infinite;
 }
 
 .floating-tiktok:hover {
-    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.6);
+}
+
+@keyframes pulseTiktok {
+
+    0%,
+    100% {
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    50% {
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.7), 0 0 0 10px rgba(0, 255, 255, 0.15), 0 0 0 20px rgba(255, 0, 80, 0.08);
+    }
 }
 
 /* Instagram Button */
 .floating-instagram {
     background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
-    box-shadow: 0 4px 15px rgba(225, 48, 108, 0.4);
+    box-shadow: 0 4px 20px rgba(225, 48, 108, 0.4);
+    animation: pulseInstagram 2s infinite;
 }
 
 .floating-instagram:hover {
-    box-shadow: 0 6px 25px rgba(225, 48, 108, 0.6);
+    box-shadow: 0 6px 30px rgba(225, 48, 108, 0.6);
+}
+
+@keyframes pulseInstagram {
+
+    0%,
+    100% {
+        box-shadow: 0 4px 20px rgba(225, 48, 108, 0.4);
+    }
+
+    50% {
+        box-shadow: 0 4px 30px rgba(225, 48, 108, 0.7), 0 0 0 10px rgba(225, 48, 108, 0.15);
+    }
 }
 
 /* WhatsApp Button */
 .floating-whatsapp {
-    width: 60px;
-    height: 60px;
     background: #25D366;
     box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
     animation: pulseWhatsapp 2s infinite;
@@ -1916,10 +1940,6 @@ h2 {
     visibility: hidden;
     transition: all var(--transition-base);
     box-shadow: var(--shadow-md);
-}
-
-.floating-whatsapp .floating-tooltip {
-    right: 70px;
 }
 
 .floating-btn:hover .floating-tooltip {
@@ -1960,13 +1980,8 @@ h2 {
     }
 
     .floating-btn {
-        width: 45px;
-        height: 45px;
-    }
-
-    .floating-whatsapp {
-        width: 55px;
-        height: 55px;
+        width: 50px;
+        height: 50px;
     }
 
     .floating-tooltip {
