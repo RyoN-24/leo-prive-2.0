@@ -19,6 +19,9 @@
     --color-accent-gold-light: #e8c4a0;
     --color-accent-gold-dark: #a67c4a;
     --color-accent-amber: #f5a623;
+    --color-accent-burgundy: #722f37;
+    --color-accent-burgundy-light: #8b3a44;
+    --color-accent-wine: #4a1c24;
 
     /* Text Colors */
     --color-text-primary: #ffffff;
@@ -47,6 +50,8 @@
     --gradient-gold: linear-gradient(135deg, var(--color-accent-gold) 0%, var(--color-accent-amber) 100%);
     --gradient-glass: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.02) 100%);
     --gradient-dark: linear-gradient(180deg, var(--color-bg-primary) 0%, var(--color-bg-secondary) 100%);
+    --gradient-burgundy: linear-gradient(135deg, var(--color-accent-burgundy) 0%, var(--color-accent-wine) 100%);
+    --gradient-gold-glow: linear-gradient(135deg, rgba(212, 165, 116, 0.3) 0%, rgba(245, 166, 35, 0.1) 100%);
 
     /* Shadows */
     --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.3);
@@ -205,7 +210,7 @@ a:hover {
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: var(--shadow-glow);
+    box-shadow: 0 8px 25px rgba(212, 165, 116, 0.5), 0 0 40px rgba(245, 166, 35, 0.3);
 }
 
 .btn-secondary {
@@ -217,6 +222,7 @@ a:hover {
 .btn-secondary:hover {
     background: var(--color-bg-glass);
     border-color: var(--color-accent-gold);
+    box-shadow: 0 0 20px rgba(212, 165, 116, 0.2);
 }
 
 .btn-whatsapp {
@@ -258,9 +264,9 @@ a:hover {
 
 .glass-card:hover {
     background: var(--color-bg-glass);
-    border-color: rgba(212, 165, 116, 0.3);
+    border-color: rgba(212, 165, 116, 0.4);
     transform: translateY(-4px);
-    box-shadow: var(--shadow-lg);
+    box-shadow: 0 8px 32px rgba(212, 165, 116, 0.15), 0 0 0 1px rgba(212, 165, 116, 0.1);
 }
 
 /* ----------------------------------------
@@ -2006,4 +2012,57 @@ h2 {
         width: 100%;
         max-width: 300px;
     }
+}
+
+/* ========================================
+   ENHANCED HOVER EFFECTS & ACCENTS
+   ======================================== */
+
+/* Section Accent Borders */
+.section:nth-child(even) {
+    border-top: 1px solid rgba(114, 47, 55, 0.2);
+    border-bottom: 1px solid rgba(114, 47, 55, 0.2);
+}
+
+/* Product Card Enhanced Hover */
+.product-card:hover {
+    box-shadow: 0 12px 40px rgba(212, 165, 116, 0.2),
+        0 0 0 1px rgba(212, 165, 116, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+/* Special Burgundy Accent for Payment Section */
+#pagos {
+    position: relative;
+}
+
+#pagos::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, var(--color-accent-burgundy), transparent);
+    border-radius: var(--radius-full);
+}
+
+/* Footer Subtle Burgundy Accent */
+.footer {
+    border-top: 1px solid rgba(114, 47, 55, 0.3);
+}
+
+/* Text Gradient with Burgundy Touch */
+.text-gradient-wine {
+    background: linear-gradient(135deg, var(--color-accent-gold) 0%, var(--color-accent-burgundy-light) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Enhanced Link Hover with Glow */
+a:hover {
+    color: var(--color-accent-gold-light);
+    text-shadow: 0 0 20px rgba(212, 165, 116, 0.3);
 }
